@@ -70,7 +70,7 @@ def main():
         screen.fill(color)
         player.update()
         asteroids.update()
-        get_hit = pygame.sprite.spritecollide(player,Asteriod, False)
+        get_hit = pygame.sprite.spritecollide(player,asteroids, False)
         asteroids.draw(screen)
         screen.blit(player.image,player.rect)
         pygame.display.flip()
@@ -87,3 +87,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+

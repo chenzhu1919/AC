@@ -10,7 +10,7 @@ size = (width, height) = (int(screen_info.current_w*0.5),int(screen_info.current
 
 screen = pygame.display.set_mode(size)
 clock = pygame.time.Clock()
-color =(30, 0, 30)
+color =(255, 255, 255)
 screen.fill(color)
 
 df = pd.read_csv('game_info.csv')
